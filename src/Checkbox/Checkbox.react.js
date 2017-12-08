@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 /* eslint-enable import/no-unresolved, import/extensions */
-import IconToggle from '../IconToggle';
+import IconToggle from '../IconToggle/ExpoIconToggle';
 import RippleFeedback from '../RippleFeedback';
 
 const propTypes = {
@@ -38,8 +38,8 @@ const propTypes = {
 };
 const defaultProps = {
     checked: false,
-    checkedIcon: 'check-box',
-    uncheckedIcon: 'check-box-outline-blank',
+    checkedIcon: 'checkbox-marked',
+    uncheckedIcon: 'checkbox-blank-outline',
     disabled: false,
     style: {},
 };
