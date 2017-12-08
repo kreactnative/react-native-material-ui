@@ -2,7 +2,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 /* eslint-enable import/no-unresolved, import/extensions */
-import Checkbox from '../Checkbox';
+import Checkbox from '../Checkbox/ExpoCheckBox';
 
 const propTypes = {
     label: PropTypes.string.isRequired,
@@ -31,8 +31,8 @@ class RadioButton extends PureComponent {
     render() {
         return (
             <Checkbox
-                checkedIcon="radio-button-checked"
-                uncheckedIcon="radio-button-unchecked"
+                checkedIcon="md-radio-button-on"
+                uncheckedIcon="md-radio-button-off"
                 onCheck={this.onPress}
                 {...this.props}
             />
