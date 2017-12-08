@@ -1,7 +1,7 @@
 /* eslint-disable import/no-unresolved, import/extensions */
 //import VectorIcon from 'react-native-vector-icons/MaterialIcons';
-import { Ionicons } from '@expo/vector-icons';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { MaterialIcons } from '@expo/vector-icons';
+//import { MaterialCommunityIcons } from '@expo/vector-icons';
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 /* eslint-enable import/no-unresolved, import/extensions */
@@ -30,7 +30,7 @@ class Icon extends PureComponent {
         const iconSize = size || spacing.iconSize;
         console.log(name);
         return (
-            <Ionicons
+            <MaterialIcons
                 name={name}
                 size={iconSize}
                 color={iconColor}
