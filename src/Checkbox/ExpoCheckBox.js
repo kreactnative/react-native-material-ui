@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 /* eslint-enable import/no-unresolved, import/extensions */
-import IconToggle from '../IconToggle';
+import IconToggle from '../IconToggle/RadioToggle';
 import RippleFeedback from '../RippleFeedback';
 
 const propTypes = {

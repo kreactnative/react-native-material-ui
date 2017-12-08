@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 
 import Color from 'color';
 import { ELEVATION_ZINDEX } from '../styles/constants';
-import Icon from '../Icon';
+import Icon from '../Icon/RadioIcon';
 
 const propTypes = {
     color: PropTypes.string,
