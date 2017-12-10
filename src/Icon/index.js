@@ -28,7 +28,7 @@ class Icon extends PureComponent {
 
         const iconColor = color || palette.secondaryTextColor;
         const iconSize = size || spacing.iconSize;
-        console.log(name);
+        //console.log(name);
         return (
             <MaterialIcons
                 name={name}
