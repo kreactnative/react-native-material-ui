@@ -1,15 +1,18 @@
 /* eslint-disable import/no-unresolved, import/extensions */
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import { Animated, Easing, Platform, StyleSheet } from 'react-native';
+import { Animated, Easing, Platform, StyleSheet, Text } from 'react-native';
 /* eslint-enable import/no-unresolved, import/extensions */
+import { ViewPropTypes } from '../utils';
 
 import IconToggle from '../IconToggle';
 
 const propTypes = {
     isSearchActive: PropTypes.bool.isRequired,
-    searchable: PropTypes.object,
-    style: PropTypes.object,
+    style: PropTypes.shape({
+        leftElementContainer: ViewPropTypes.style,
+        leftElement: Text.propTypes.style,
+    }),
     size: PropTypes.number,
     leftElement: PropTypes.node,
     onLeftElementPress: PropTypes.func,
@@ -19,7 +22,6 @@ const defaultProps = {
     leftElement: null,
     onLeftElementPress: null,
     onSearchClose: null,
-    searchable: null,
     style: {},
     size: 24,
 };
@@ -27,7 +29,7 @@ const contextTypes = {
     uiTheme: PropTypes.object.isRequired,
 };
 
-const SEARCH_FORWARD_ICON = 'arrow-forward';
+const SEARCH_FORWARD_ICON = 'chevron-right';
 
 function shouldUpdateStyles(props, nextProps) {
     if (props.style !== nextProps.styles) {

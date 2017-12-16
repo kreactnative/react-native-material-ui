@@ -4,10 +4,14 @@ import PropTypes from 'prop-types';
 import { View } from 'react-native';
 /* eslint-enable import/no-unresolved, import/extensions */
 import Button from '../Button';
+import { ViewPropTypes } from '../utils';
 
 const propTypes = {
-    actions: PropTypes.array.isRequired,
+    actions: PropTypes.arrayOf(PropTypes.string).isRequired,
     onActionPress: PropTypes.func.isRequired,
+    style: PropTypes.shape({
+        defaultActionsContainer: ViewPropTypes.style,
+    }),
 };
 const defaultProps = {
     style: {},
